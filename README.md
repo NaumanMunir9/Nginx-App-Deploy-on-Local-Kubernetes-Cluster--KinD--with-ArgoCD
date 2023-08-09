@@ -1,5 +1,7 @@
 # Nginx App Deploy on Local Kubernetes Cluster (KinD) with ArgoCD
 
+---
+
 ### What Is Argo CD?
 
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
@@ -11,6 +13,8 @@ Application definitions, configurations, and environments should be declarative 
 ### ArgoCD Architecture
 
 ![ArgoCD Architecture](https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png)
+
+---
 
 ### Setup Local Kubernetes Environment (KinD) with LoadBalancer (Metallb)
 
