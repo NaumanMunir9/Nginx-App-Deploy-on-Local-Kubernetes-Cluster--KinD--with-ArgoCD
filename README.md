@@ -8,6 +8,10 @@ Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
 Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
 
+### ArgoCD Architecture
+
+![ArgoCD Architecture](https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png)
+
 ### Setup Local Kubernetes Environment (KinD) with LoadBalancer (Metallb)
 
 Please refer to the following github repo for setting up a local kubernetes environment using KinD and LoadBalancer using Metallb.
