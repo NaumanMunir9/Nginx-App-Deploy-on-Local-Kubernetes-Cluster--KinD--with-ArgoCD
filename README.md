@@ -16,6 +16,12 @@ Application definitions, configurations, and environments should be declarative 
 
 ---
 
+## Application Architecture
+
+![Application Architecture](/architecture-diagram/nginx-app-argocd.png)
+
+---
+
 ### Setup Local Kubernetes Environment (KinD) with LoadBalancer (Metallb)
 
 Please refer to the following github repo for setting up a local kubernetes environment using KinD and LoadBalancer using Metallb.
