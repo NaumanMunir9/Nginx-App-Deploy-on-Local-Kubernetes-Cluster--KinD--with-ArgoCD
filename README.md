@@ -2,15 +2,15 @@
 
 ---
 
-### What Is Argo CD?
+## What Is Argo CD?
 
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
-### Why Argo CD?
+## Why Argo CD?
 
 Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
 
-### ArgoCD Architecture
+## ArgoCD Architecture
 
 ![ArgoCD Architecture](https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png)
 
@@ -26,7 +26,7 @@ Please refer to the following github repo for setting up a local kubernetes envi
 
 ## Project WorkFlow
 
-#### Installing ArgoCD
+### Installing ArgoCD
 
 ```shell
 kubectl create namespace argocd
@@ -35,7 +35,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 ---
 
-#### How it works
+### How it works
 
 Argo CD follows the GitOps pattern of using Git repositories as the source of truth for defining the desired application state. Kubernetes manifests can be specified in several ways:
 
@@ -52,7 +52,7 @@ k get all -n argocd
 
 ---
 
-#### Change the service type of "argocd-server" from "ClusterIP" to LoadBalancer
+### Change the service type of "argocd-server" from "ClusterIP" to LoadBalancer
 
 For the argocd to utilize Metallb, we have to change the service type of "argocd-server" service from "ClusterIP" to "LoadBalancer"
 
@@ -68,7 +68,7 @@ k get all -n argocd
 
 ---
 
-#### Login ArgoCD Web Interface
+### Login ArgoCD Web Interface
 
 username: admin
 password: "**please enter the following command in the terminal**"
@@ -77,7 +77,7 @@ password: "**please enter the following command in the terminal**"
 k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 
-#### Create Application
+### Create Application
 
 - ***SYNC POLICY***: Automatic
 - **PRUNE RESOURCES**: CHECKED, Argo will delete resources if they are no longer defined in Git
