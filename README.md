@@ -33,3 +33,21 @@ Argo CD follows the GitOps pattern of using Git repositories as the source of tr
 - Plain directory of YAML/json manifests
 
 Argo CD automates the deployment of the desired application states in the specified target environments. Application deployments can track updates to branches, tags, or pinned to a specific version of manifests at a Git commit.
+
+```shell
+k get all -n argocd
+```
+
+#### change the service type of "argocd-server" to LoadBalancer
+
+For the argocd to utilize Metallb, we have to change the service type of "argocd-server" service from "ClusterIP" to "LoadBalancer"
+
+```shell
+k edit service argocd-server -n argocd
+```
+
+```shell
+k get all -n argocd
+```
+
+Now we see that the service type of "argocd-server" service has been changed from "ClusterIP" to "LoadBalancer".
