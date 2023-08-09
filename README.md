@@ -38,7 +38,7 @@ Argo CD automates the deployment of the desired application states in the specif
 k get all -n argocd
 ```
 
-#### change the service type of "argocd-server" to LoadBalancer
+#### Change the service type of "argocd-server" from "ClusterIP" to LoadBalancer
 
 For the argocd to utilize Metallb, we have to change the service type of "argocd-server" service from "ClusterIP" to "LoadBalancer"
 
@@ -50,4 +50,6 @@ k edit service argocd-server -n argocd
 k get all -n argocd
 ```
 
-Now we see that the service type of "argocd-server" service has been changed from "ClusterIP" to "LoadBalancer".
+**Now we see that the service type of "argocd-server" service has been changed from "ClusterIP" to "LoadBalancer".**
+
+---
