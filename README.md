@@ -18,7 +18,7 @@ Application definitions, configurations, and environments should be declarative 
 
 ## Application Architecture
 
-![Application Architecture](/architecture-diagram/nginx-app-argocd.png)
+![Application Architecture](/architecture-diagram/nginx-app-deploy-with-argocd.png)
 
 ---
 
